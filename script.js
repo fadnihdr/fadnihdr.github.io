@@ -1,12 +1,40 @@
 function multiplier() {
     let count = arguments[0];
-    let string1 = arguments[1];
-    for (i = 0; i < 1000; i++){
-        string1 = string1 + "<br>" + arguments[1];
+    let tocheck = arguments[1];
+    let tmp = "";
+    let string1 = "";
+    if (fadnimaso(tocheck)){
+        tmp = "cieee. aku udah fix ini kok :). kamu gabisa macam2 beneran lagi. fadni nggabisa maso. kamu aja yang bisa lalalalalalalala"
+    }
+    else tmp = arguments[1];
+    for (i = 0; i < count; i++){
+        string1 = string1 + "<br>" + tmp;
     }
     return string1;
 
 }
+
+function fadnimaso() {
+    let str = arguments[0];
+    let uniq = "";
+    for (var i = 0; i < str.length; i++){
+        if (uniq.indexOf(str.charAt(i)) === -1){
+            uniq += str[i];
+        }
+    }
+    let list = ["padni mso", "fadni mso", "kontl mas"];
+    let contains = false;
+    for (var j = 0; j < list.length; j++){
+        if (list[j] === uniq){
+            contains = true;
+        }
+    }
+    if (contains){
+        document.createElement("A").
+    }
+    return contains;
+}
+
 function defthanks1() {
     let n = 1000;
     let str = "Terimakasih yola atas semuanya, kamu bikin aku seneng. Aku seneng udah bikin kamu seneng";
@@ -34,8 +62,5 @@ function defsorry2() {
 function customtext() {
     let str = document.getElementById("input1").value;
     let n = document.getElementById("input2").value;
-    if (str.toLowerCase() === "fadni maso" || str.toLowerCase() === "konti maso"){
-        str = "fadni gabisa maso, cuman yola yang bisa maso lalalalalalala"
-    }
     document.getElementById("output").innerHTML = multiplier(n, str);
 }
