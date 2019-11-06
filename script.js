@@ -29,9 +29,6 @@ function fadnimaso() {
             contains = true;
         }
     }
-    if (contains){
-        document.createElement("A").
-    }
     return contains;
 }
 
