@@ -1,3 +1,7 @@
+var masoCount = 0;
+document.getElementById("counter").innerHTML = "Counter = " + masoCount;
+
+
 function multiplier() {
     let count = arguments[0];
     let tocheck = arguments[1];
@@ -22,14 +26,27 @@ function fadnimaso() {
             uniq += str[i];
         }
     }
-    let list = ["padni mso", "fadni mso", "kontl mas"];
-    let contains = false;
+    let list = ["padni mso", "fadni mso", "kontl mas", "fadni msho", "padni msho"];
+    let isMaso = false;
     for (var j = 0; j < list.length; j++){
         if (list[j] === uniq){
-            contains = true;
+            masoCount += 1;
+            document.getElementById("counter").innerHTML = "Counter = " + masoCount;
+            isMaso = true;
         }
     }
-    return contains;
+    if (masoCount >= 3){
+        showimage();
+    }
+    return isMaso;
+
+}
+
+function showimage() {
+    var img = document.createElement("IMG");
+    img.src = "assets/img/unibrow.jpg";
+    img.size = "800x450";
+    document.getElementById("image").appendChild(img);
 }
 
 function defthanks1() {
