@@ -59,38 +59,39 @@ function showimage() {
 function showimg() {
     let img = document.createElement("IMG");
     let num = Math.random(0,9) * 10;
-    switch (num.toFixed(0)) {
-        case 0:
-            img.src = "assets/img/2kitten";
-            break;
-        case 1:
-            img.src = "assets/img/6";
-            break;
-        case 2:
-            img.src = "assets/img/7";
-            break;
-        case 3:
-            img.src = "assets/img/cuddle1";
-            break;
-        case 4:
-            img.src = "assets/img/cuddle2";
-            break;
-        case 5:
-            img.src = "assets/img/cuddle3";
-            break;
-        case 6:
-            img.src = "assets/img/wht1";
-            break;
-        case 7:
-            img.src = "assets/img/wht2";
-            break;
-        case 8:
-            img.src = "assets/img/cat3";
-            break;
-        case 9:
-            img.src = "assets/img/cuddle4";
-
+    let s1 = num.toFixed(0);
+    if (s1 == 1) {
+        img.src = "assets/img/6";
+        console.log("1");
+    } else if (s1 == 2) {
+        img.src = "assets/img/7";
+        console.log("2");
+    } else if (s1 == 3) {
+        img.src = "assets/img/cuddle1";
+        console.log("3");
+    } else if (s1 == 4) {
+        console.log("4");
+        img.src = "assets/img/cuddle2";
+    } else if (s1 == 5) {
+        console.log("5");
+        img.src = "assets/img/cuddle3";
+    } else if (s1 == 6) {
+        console.log("6");
+        img.src = "assets/img/wht1";
+    } else if (s1 == 7) {
+        console.log("7");
+        img.src = "assets/img/wht2";
+    } else if (s1 == 8) {
+        console.log("8");
+        img.src = "assets/img/cat3";
+    } else if (s1 == 9) {
+        console.log("9");
+        img.src = "assets/img/cuddle4";
+    } else {
+        img.src = "assets/img/2kitten";
+        console.log("0");
     }
+    img.size = "800x600";
     document.getElementById("image").appendChild(img);
 
 }
@@ -124,5 +125,3 @@ function customtext() {
     let n = document.getElementById("input2").value;
     document.getElementById("output").innerHTML = multiplier(n, str);
 }
-
-console.log((Math.random(0,9) * 10).toFixed(0));
