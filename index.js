@@ -61,34 +61,34 @@ function showimg() {
     let num = Math.random(0,9) * 10;
     let s1 = num.toFixed(0);
     if (s1 == 1) {
-        img.src = "assets/img/6";
+        img.src = "assets/img/6.jpg";
         console.log("1");
     } else if (s1 == 2) {
-        img.src = "assets/img/7";
+        img.src = "assets/img/7.jpg";
         console.log("2");
     } else if (s1 == 3) {
-        img.src = "assets/img/cuddle1";
+        img.src = "assets/img/cuddle1.jpg";
         console.log("3");
     } else if (s1 == 4) {
         console.log("4");
-        img.src = "assets/img/cuddle2";
+        img.src = "assets/img/cuddle2.jpg";
     } else if (s1 == 5) {
         console.log("5");
-        img.src = "assets/img/cuddle3";
+        img.src = "assets/img/cuddle3.jpg";
     } else if (s1 == 6) {
         console.log("6");
-        img.src = "assets/img/wht1";
+        img.src = "assets/img/wht1.jpg";
     } else if (s1 == 7) {
         console.log("7");
-        img.src = "assets/img/wht2";
+        img.src = "assets/img/wht2.jpg";
     } else if (s1 == 8) {
         console.log("8");
-        img.src = "assets/img/cat3";
+        img.src = "assets/img/cat3.jpg";
     } else if (s1 == 9) {
         console.log("9");
-        img.src = "assets/img/cuddle4";
+        img.src = "assets/img/cuddle4.jpg";
     } else {
-        img.src = "assets/img/2kitten";
+        img.src = "assets/img/2kitten.jpg";
         console.log("0");
     }
 
