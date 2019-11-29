@@ -91,7 +91,7 @@ function showimg() {
         img.src = "assets/img/2kitten";
         console.log("0");
     }
-    img.size = "800x600";
+
     document.getElementById("image").appendChild(img);
 
 }
