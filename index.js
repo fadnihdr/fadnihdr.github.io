@@ -1,5 +1,5 @@
-let masoCount = 0;
-document.getElementById("counter").innerHTML = "Counter = " + masoCount;
+//let masoCount = 0;
+//document.getElementById("counter").innerHTML = "Counter = " + masoCount;
 
 
 function multiplier() {
@@ -58,8 +58,8 @@ function showimage() {
 
 function showimg() {
     let img = document.createElement("IMG");
-    let num = Math.random() * 10;
-    switch (num) {
+    let num = Math.random(0,9) * 10;
+    switch (num.toFixed(0)) {
         case 0:
             img.src = "assets/img/2kitten";
             break;
@@ -124,3 +124,5 @@ function customtext() {
     let n = document.getElementById("input2").value;
     document.getElementById("output").innerHTML = multiplier(n, str);
 }
+
+console.log((Math.random(0,9) * 10).toFixed(0));
