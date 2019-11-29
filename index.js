@@ -61,7 +61,7 @@ function showimg() {
     let num = Math.random(0,9) * 10;
     let s1 = num.toFixed(0);
     if (s1 == 1) {
-        img.src = "assets/img/6.jpg";
+        img.src = "assets/img/unibrow.jpg";
         console.log("1");
     } else if (s1 == 2) {
         img.src = "assets/img/7.jpg";
