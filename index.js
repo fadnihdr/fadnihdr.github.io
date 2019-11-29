@@ -57,7 +57,7 @@ function showimage() {
 **/
 
 function showimg() {
-    if (document.getElementById("image").childElementCount == 1){
+    if (document.getElementById("image").childElementCount === 1){
         document.getElementById("image").removeChild(document.getElementById("image").firstChild);
     }
     let img = document.createElement("IMG");
