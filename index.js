@@ -57,14 +57,11 @@ function showimage() {
 **/
 
 function showimg() {
-<<<<<<< HEAD
-=======
-    if (document.getElementById("image").childElementCount == 1){
+    if (document.getElementById("image").childElementCount === 1){
         document.getElementById("image").removeChild(document.getElementById("image").firstChild);
     }
->>>>>>> parent of c7b65a9... holy shit udah berapa update
     let img = document.createElement("IMG");
-    let num = 0;
+    let num = Math.random(0,9) * 10;
     let s1 = num.toFixed(0);
     if (s1 == 1) {
         img.src = "assets/img/6.jpg";
@@ -99,7 +96,6 @@ function showimg() {
     }
 
     document.getElementById("image").appendChild(img);
-    num++;
 
 }
 
