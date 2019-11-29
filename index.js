@@ -57,6 +57,12 @@ function showimage() {
 **/
 
 function showimg() {
+<<<<<<< HEAD
+=======
+    if (document.getElementById("image").childElementCount == 1){
+        document.getElementById("image").removeChild(document.getElementById("image").firstChild);
+    }
+>>>>>>> parent of c7b65a9... holy shit udah berapa update
     let img = document.createElement("IMG");
     let num = 0;
     let s1 = num.toFixed(0);
