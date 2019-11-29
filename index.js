@@ -57,11 +57,14 @@ function showimage() {
 **/
 
 function showimg() {
+    if (document.getElementById("image").childElementCount == 1){
+        document.getElementById("image").removeChild(document.getElementById("image").firstChild);
+    }
     let img = document.createElement("IMG");
     let num = Math.random(0,9) * 10;
     let s1 = num.toFixed(0);
     if (s1 == 1) {
-        img.src = "assets/img/unibrow.jpg";
+        img.src = "assets/img/6.jpg";
         console.log("1");
     } else if (s1 == 2) {
         img.src = "assets/img/7.jpg";
